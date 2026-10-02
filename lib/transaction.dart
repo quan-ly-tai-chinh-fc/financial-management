@@ -1,7 +1,7 @@
 class Transaction {
-  String title = "An sang";
+  String title = "Ăn sáng";
   double amount = 50000;
-  String category = "An uong";
+  String category = "Ăn uống";
   String type = "Chi";
   String date = "02/10/2026";
 
