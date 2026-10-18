@@ -139,3 +139,49 @@ lib/
 
 Ứng dụng được phát triển bằng Flutter và có khả năng mở rộng thêm các chức năng như đăng nhập, lưu trữ dữ liệu, biểu đồ thống kê và thông báo tài chính.
 
+## Bài tập: Generics và kế thừa trong Dart
+
+### 1. Mục tiêu
+- Xây dựng lớp tổng quát `BaseEntity<T>` bằng Generics.
+- Sử dụng `extends` để kế thừa và tái sử dụng code.
+- Sử dụng `Object` để quản lý nhiều loại đối tượng.
+- Sử dụng `runtimeType` và `Type` để xác định kiểu dữ liệu của đối tượng.
+- Áp dụng vào project quản lý tài chính của nhóm.
+
+### 2. Các file đã thực hiện
+
+| File | Chức năng |
+|---|---|
+| `base_entity.dart` | Lớp cha tổng quát `BaseEntity<T>`, chứa ID, tên và phương thức hiển thị thông tin. |
+| `category.dart` | Lớp danh mục chi tiêu, kế thừa `BaseEntity<int>`. |
+| `transaction.dart` | Lớp giao dịch, kế thừa `BaseEntity<String>`, quản lý số tiền, danh mục, loại giao dịch và ngày giao dịch. |
+| `main.dart` | Tạo đối tượng, sử dụng `Object`, `Type` và kiểm tra kiểu dữ liệu. |
+
+### 3. Kiến thức áp dụng
+
+- **Generics:** Cho phép lớp `BaseEntity<T>` sử dụng nhiều kiểu dữ liệu ID khác nhau.
+- **Inheritance (`extends`):** Các lớp `Category` và `Transaction` kế thừa thuộc tính, phương thức từ `BaseEntity`.
+- **Object:** Lưu trữ các đối tượng thuộc nhiều lớp khác nhau trong cùng một danh sách.
+- **Type và `runtimeType`:** Xác định kiểu thực tế của đối tượng tại thời điểm chạy chương trình.
+- **Override:** Ghi đè `displayInfo()` để hiển thị thông tin riêng của từng đối tượng.
+
+### 4. Kết quả thực hiện
+
+Chương trình tạo các đối tượng danh mục và giao dịch, hiển thị thông tin và kiểu dữ liệu của từng đối tượng. Các lớp được tổng quát hóa để thuận tiện cho việc mở rộng project quản lý tài chính.
+
+### 5. Ảnh chụp màn hình
+
+Bổ sung ảnh chụp:
+- Code lớp `BaseEntity`.
+- Code lớp `Category` và `Transaction`.
+- Kết quả chạy chương trình trong Terminal.
+
+### 6. Link commit
+
+Dán link commit GitHub của bài tập Generics tại đây.
+
+### 7. Công nghệ sử dụng
+
+- Ngôn ngữ: Dart
+- Framework của project: Flutter
+- Công cụ: Visual Studio Code, Git và GitHub
