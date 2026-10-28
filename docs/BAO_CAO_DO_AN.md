@@ -54,7 +54,7 @@ Với nhóm 3 người, chọn tối thiểu 12 story đầu phù hợp phạm v
 - Giao diện đọc được trên màn hình điện thoại; xác nhận trước thao tác xóa.
 - Khi dùng Firestore, bật Authentication/Rules phù hợp, không để quy tắc đọc ghi công khai trong bản triển khai.
 
-## Câu 3 — Sơ đồ
+## Câu 3 — Sơ đồ 
 
 ### 3.1 Class Diagram
 ```mermaid
