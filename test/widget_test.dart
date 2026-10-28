@@ -1,30 +1,15 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
+import 'package:fincare/core/format.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:quan_ly_tai_chinh/main.dart';
-
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  test('định dạng tiền Việt', () {
+    expect(money(1234567), '1.234.567');
+    expect(moneyD(50000), '50.000 đ');
+    expect(moneyShort(1500000), '1.5tr');
+  });
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  test('định dạng ngày', () {
+    expect(dmy('2026-10-19'), '19/10/2026');
+    expect(ym(DateTime(2026, 3, 5)), '2026-03');
   });
 }
