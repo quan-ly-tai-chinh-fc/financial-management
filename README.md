@@ -367,7 +367,7 @@ Dự án có thể được phát triển bởi nhóm 3 thành viên theo các n
 
 | Thành viên | Phạm vi công việc |
 |---|---|
-| NGUYEN TUAN MINH | Đăng nhập, đăng ký, khôi phục mật khẩu, quản lý tài khoản và tích hợp các thành phần dùng chung |
+| NGUYEN MUNH TUAN | Đăng nhập, đăng ký, khôi phục mật khẩu, quản lý tài khoản và tích hợp các thành phần dùng chung |
 | NGUYEN ANH TAI | Giao dịch thu chi, tổng quan tài chính, báo cáo và biểu đồ |
 | NGUYEN HUU TRUNG | Ví tiền, danh mục, ngân sách, khoản vay và giao dịch định kỳ |
 
